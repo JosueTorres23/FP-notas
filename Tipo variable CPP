@@ -1,0 +1,43 @@
+//Bibliotecas
+#include <iostream> 
+using namespace std; //std es de standart
+//si ya declaraste la referencia esta variable evita poner "std::cloud" (llama a la librearía), porque ya se declaro la librearía, de lo contrario si lo puedes usar
+
+int main()
+{
+	/* 1. Entero (int) */
+
+	int numeroEntero = 42;
+	//Las variables se declara con "int numeroEntero = (num);" //Al intEnteo le conocen como la joroba de camello porque la E es mayúscula
+	//Otra manera para declarar la variable puede ser "int (nom de la variable)=(A qué equivale esa variable);"
+
+	
+	cout << "Entero : " << numeroEntero << endl; 
+	//"cout" hace referencia a que hay una salida, y siempre va acompañado de un "<<" el cual nos sirve para poder separara lo que vamos a usar
+	//"endl" nos dice que está terminado la línea
+	//En este caso estamos diciendo que vamos a tener una salida, despues que nos diga el texto "Entero : " y por último que use la variable para dar salida del texto y de nuestra variable
+
+	/* 2. Entero corto (short int) */
+
+	short int numeroCorto = 32000;
+	//Decimos que vamos a usar un valor corto, que va desde -32768 hasta 32767
+	cout << "Entero Corto : " << numeroCorto << endl;
+
+	/* 3. Entero largo (long int) */
+	long long numeroLargo = -9000000000;
+	//Este es basicamnente lo mismo que el valor corto, solo que aquí vamos desde -9,232,372,036,854,775,808 hasta 9,232,372,036,854,775,807. Ósea un chingo
+	//Si usamos long int no nos da siempre el valor que nosostros querramos porque se conjuntan "long" e "int", entonces si el valor es muy grandre hay que usar "long long"
+	cout << "Entero largo : " << numeroLargo << endl;
+
+	unsigned int numeroSinsigno = 1000000;
+	//Con "unsigned" decimos que vamos a usar únicamente valoqres que no contengan signo que van desde 0 hasta 
+	cout << "Número sin signo : " << numeroSinsigno << endl;
+
+	unsigned short int numeroCortoSinSigno = 23000;
+	//Decimos que vamos a usar únicamente valoqres que no contengan signo que van desde 0 hasta
+	cout << "Número corto sin signo : " << numeroCortoSinSigno << endl;
+
+	unsigned long long int numeroLargoSinSigno = 9000000001;
+	//Decimos que vamos a usar únicamente valoqres que no contengan signo que van desde 0 hasta
+	cout << "Número largo sin signo : " << numeroLargoSinSigno << endl;
+}
