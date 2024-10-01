@@ -88,8 +88,41 @@ int main() <--- Esto es obligatorio
     cout << "Rango long long : " << numeric_limits<long long>::min() << " a " << numeric_limits<long long>::max() << endl;
     cout << " " << endl;
 
+    int edad;
 
+    cout << "Por favor ingresa tu edad : ";
+    cin >> edad; //Guardando un valor de edad
+    /* "cin" es una función que se usa para leer un conjunto de caracteres desde la consola
+    
+    NOTA: considera que por default, la consola acepta cualquier valor de entrada, es decir una cadena de caracteres
+    */
+    cout << endl; //es un salto de pagina más eficiente que loa anteriores
+    cout << "Tu edad es : " << edad << endl;
+    cout << endl;
 
+    const float pi = 3.141632; //Decimal de 7 digitos de precisión
+    //Pusimos const para declarar que pi es un valor constante y no se puede editar
+    double PI = 3.141632; //Decimal de 15 digitos de precisión
+    cout << fixed; //Aquí le decimos que el púnto debe ser fijo
+    cout << setprecision(2); //Aquí le decimos cuanto digitos vamos a manejar de nuestro número
+    cout << "El valor de pi es " << pi << endl;
+    /* estas fueron impresión de valores para el usuario */
+
+    //Preguntamnos por estatura
+    
+    float estatura;
+    cout << "Por favor, ingresa tu estatura: ";
+    cin >> estatura;
+    cout << endl;
+    cout << "Tu estatura es: "
+            << estatura << endl;
+
+    /* investiga más sobre setprecisión y fixed*/
+
+    /* delaración de constantes*/
+
+    const float veldeLuz = 300000000;
+    cout << veldeLuz;
 
     return 0;
 }
